@@ -1,0 +1,311 @@
+body {
+    background: #f1f4f5;
+    font-family: 'Roboto', sans-serif !important;
+    color: #76838f;
+}
+
+@font-face {
+    font-family: "Kiwi";
+    src: url("./../../fonts/Avenir/Avenir-Heavy.eot");
+    url("./../../fonts/Avenir/Avenir-Heavy.woff") format("woff"),
+    url("./../../fonts/Avenir/AEH.ttf") format("truetype"),
+    url("./../../fonts/Avenir-Heavy.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #37474f;
+}
+
+.box-shadow {
+    box-shadow: 0 1px 8px 0 rgba(28,35,43,.15);
+}
+
+.kiwi-brand {
+    font-family: Avenir;
+    font-size: 20px;
+    font-weight: 700;
+    color: #37474f;
+}
+
+.kiwi-brand:hover {
+    color: #37474f !important;
+}
+
+.kiwi-brand > span {
+    color: #5fdbb9;
+}
+
+.bg-light {
+    background: #fff !important;
+    border-bottom: 1px solid #e4eaec;
+}
+
+.account-menu {
+    right: 0 !important;
+    left: auto;
+}
+
+.main-header {
+    padding: 3% 0;
+    background: linear-gradient(#926dde,#c0a8f2);
+    min-height: 350px;
+}
+
+.travel-bg {
+    background: url(/img/travel.svg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+}
+
+.motto {
+    font-size: 26px;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-top: 0;
+    overflow: hidden;
+    -webkit-animation: fadein 1s;
+    animation: fadein 1s;
+    text-transform: uppercase;
+    color: white;
+}
+
+.motto-description {
+    font-size: 17px;
+    line-height: 1.3;
+    margin-top: 0;
+    overflow: hidden;
+    -webkit-animation: fadein 1s;
+    animation: fadein 1s;
+    color: white;
+    font-weight: 400;
+}
+
+.input-group-prepend {
+    border: none;
+}
+
+.input-group-text {
+    background: #fff;
+    border: none;
+}
+
+.input-group > .form-control {
+    border: none;
+    height: 60px;
+    font-size: 17px;
+}
+
+.input-group > .form-control:focus {
+    box-shadow: none;
+}
+
+.input-group-text > i {
+    font-size: 20px;
+}
+
+#daterange {
+    margin-bottom: 1rem;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+#daterange > .checkIn, #daterange > .checkOut {
+    border: none;
+    height: 60px;
+    display: block;
+    width: 50%;
+    padding: .75rem;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#daterange > .checkIn {
+    border-top-left-radius: .25rem;
+    border-right: 1px solid #e4eaec;
+    border-bottom-left-radius: .25rem;
+}
+
+#daterange > .checkOut {
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+
+.icon-wrapper {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.checkIn > span.date, .checkOut > span.date {
+    padding-left: .75rem;
+}
+
+.traveler-dropdown {
+    position: relative;
+    float: left;
+    width: 60%;
+    margin: 0 auto;
+    padding: .75rem;
+    background: #fff;
+    border-radius: .25rem;
+    cursor: pointer;
+    outline: none;
+    height: 60px;
+}
+
+.traveler-dropdown:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #8aa8bd transparent;
+}
+
+.traveler-dropdown-menu {
+    padding-left: 0;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: .25rem;
+    font-weight: normal;
+    transition: all 0.2s ease-in;
+    list-style: none;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 1px 8px 0 rgba(28,35,43,.15);
+}
+
+.traveler-dropdown-menu li a {
+    display: block;
+    padding: .75rem;
+    text-decoration: none;
+    border-bottom: 1px solid #e6e8ea;
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    color: #76838f;
+}
+
+.traveler-dropdown-menu li span {
+    float: left;
+    width: 50%;
+    display: block;
+    padding: .75rem;
+    text-align: right;
+    border-bottom: 1px solid #e6e8ea;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.traveler-dropdown-menu li:first-of-type a {
+    border-radius: .25rem .25rem 0 0;
+}
+
+.traveler-dropdown-menu li:last-of-type a {
+    border-radius: 0 0 .25rem .25rem;
+    border: none;
+}
+
+.traveler-dropdown-menu li:last-of-type span {
+    border: none;
+}
+
+.traveler-dropdown-menu li:hover a, .traveler-dropdown-menu li:hover span {
+    background: #f3f8f8;
+    color: #926dde;
+}
+
+.traveler-dropdown-menu:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 15px;
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: #fff transparent;
+}
+
+.traveler-dropdown-menu:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 13px;
+    border-width: 0 8px 8px 8px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.1) transparent;
+}
+
+.traveler-dropdown.active .traveler-dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.traveler-dropdown .icon-wrapper {
+    width: 40px;
+    line-height: 40px;
+    float: left;
+}
+
+.traveler-dropdown .value-wrapper {
+    width: calc(100% - 40px);
+    float: left;
+    padding: 0;
+}
+
+.traveler-dropdown .value-wrapper .placeholder span:first-of-type {
+    display: block;
+    font-size: 17px;
+    line-height: 17px;
+}
+
+.traveler-dropdown .value-wrapper .placeholder span:last-of-type {
+    font-size: 12px;
+    color: #76838f;
+}
+
+.searchbutton-wrapper {
+    width: 40%;
+    float: left;
+    padding-left: .75rem;
+}
+
+.searchbutton-wrapper .search-button {
+    color: white;
+    background: #5fdbb9;
+    text-decoration: none;
+    border-radius: .25rem;
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding: .85rem 1.4rem;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.searchbutton-wrapper .search-button:hover {
+    background: #46C2A0;
+}

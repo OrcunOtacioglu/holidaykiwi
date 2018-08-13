@@ -1,0 +1,118 @@
+.destinations {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+.destination {
+    float: left;
+    margin: 10px;
+    height: 250px;
+    width: 250px;
+    border-radius: 6px;
+    box-shadow: 0 1px 8px 0 rgba(28,35,43,.15);
+}
+
+.destination:first-of-type {
+    margin-left: 0;
+}
+
+.destination:last-of-type {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.destination.sm {
+    height: 200px;
+    width: 200px;
+}
+
+.destination.sm .destination-name h1 {
+    font-size: 25px;
+}
+
+.destination-name {
+    height: 100%;
+    background: rgba(82, 96, 105,.5);
+    border-radius: 6px;
+    color: #fff;
+}
+
+.destination-name h1 {
+    color: #fff;
+}
+
+.trip-summary {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+.duration {
+    font-size: 22px;
+    color: #fff;
+    background: #5fdbb9;
+    margin: -1.25rem -1.25rem 0 -1.25rem;
+    padding: .75rem;
+    text-align: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.travelers {
+    padding: .25rem .75rem;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.destination-count {
+    padding: .25rem .75rem;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.card-footer:last-child {
+    border-radius: 6px;
+}
+
+.need-help {
+    color: #76838f;
+    font-size: 13px;
+}
+
+.need-help:hover {
+    color: #926dde;
+    text-decoration: none;
+}
+
+.btn-kiwi {
+    color: #fff;
+    background-color: #926dde;
+    border-color: #926dde;
+}
+
+.btn-kiwi:hover {
+    color: #fff;
+    background-color: #926dde;
+    border-color: #926dde;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.mv-10 {
+    margin: 10px 0 10px 0;
+}
+
+.b-none {
+    border: none;
+}
+
+.bg-none {
+    background: transparent;
+}
+
+.br-6 {
+    border-radius: 6px;
+}
